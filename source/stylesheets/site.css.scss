@@ -66,9 +66,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.featherlight {
-  -webkit-overflow-scrolling: touch;
-}
+// .featherlight {
+//   -webkit-overflow-scrolling: touch;
+// }
 
 body.lightbox-open {
   overflow: hidden;
@@ -400,10 +400,11 @@ a {
 
 
 .btn {
-  font-size: .8rem;
+  font-size: .9rem;
   border: 1px solid $greendark;
   padding: 4px 16px;
   margin: 8px 0;
+  line-height: 1.5;
   display: inline-block;
   text-decoration: none;
   color: $greendark;
@@ -504,7 +505,7 @@ svg rect {
   left: 0;
   right: 0;
   min-height: 100vh;
-  font-size: .8rem;
+  font-size: 1rem;
   line-height: 1.4;
   &.current {
     opacity: 1;
@@ -533,8 +534,8 @@ right: 56%;
         }
       }
       &-logo {
-        width: 142px;
-        top: 50%;
+        width: 120px;
+        top: 49%;
         transform: translateY( -50% );
         left: 0;
         right: 0;
@@ -783,6 +784,7 @@ right: 56%;
       top: 60px;
       z-index: 0;
       opacity: 0;
+      stroke: $greendark;
       transition: .7s ease-in-out .5s all;
       &.active {
         opacity: 1;
@@ -815,11 +817,12 @@ right: 56%;
     }
     .lantern {
       position: absolute;
-      right: 0px;
+      right: -5px;
       width: 80px;
       height: 270px;
       top: 580px;
       opacity: 0;
+      fill: $greendark;
       transition: .5s ease-in opacity;
       &.active {
         opacity: 1;
@@ -831,6 +834,7 @@ right: 56%;
       left: 20px;
       width: 180px;
       opacity: 0;
+      fill: $greendark;
       transition: .5s ease-in opacity;
       &.active {
         opacity: 1;
@@ -1000,7 +1004,7 @@ right: 56%;
     padding-bottom: 100%;
   }
   h2 {
-    font-size: .8rem;
+    font-size: 1rem;
     text-align: left;
     font-weight: 300;
   }
@@ -1161,7 +1165,7 @@ right: 56%;
       }
       .text-block {
         margin-left: 80px;
-        font-size: .8rem;
+        font-size: .9rem;
       }
       .orb {
         &--small {
@@ -1205,6 +1209,7 @@ right: 56%;
         width: 160px;
         left: 82%;
         top: 60px;
+        stroke: $greendark;
         transition: .7s ease-in-out .7s all;
         &.active {
           left: 81%;
@@ -1230,7 +1235,7 @@ right: 56%;
       }
       .lantern {
         stroke-width: 1px;
-        right: 0px;
+        right: -5px;
         width: 160px;
         height: 540px;
         top: 840px;
@@ -1584,7 +1589,7 @@ right: 56%;
       padding: 20px 30px;
 
       .text-block {
-        font-size: .8rem;
+        font-size: 1rem;
         margin: 130px auto 0 100px;
         padding: 0;
         max-width: 750px;
@@ -1658,7 +1663,7 @@ right: 56%;
     //     font-size: .8rem;
     //     margin: 130px auto 0 100px;
     //     padding: 0;
-     max-width: 900px;
+     max-width: 860px;
     //     line-height: 30px;
     //     p {
     //       line-height: 1.6;

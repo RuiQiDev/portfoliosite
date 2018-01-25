@@ -104,7 +104,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */ }
 
 /**
@@ -565,9 +566,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.featherlight {
-  -webkit-overflow-scrolling: touch; }
-
 body.lightbox-open {
   overflow: hidden; }
 
@@ -842,10 +840,11 @@ a {
                 transform: scale(1); }
 
 .btn {
-  font-size: .8rem;
+  font-size: .9rem;
   border: 1px solid #383F26;
   padding: 4px 16px;
   margin: 8px 0;
+  line-height: 1.5;
   display: inline-block;
   text-decoration: none;
   color: #383F26; }
@@ -927,7 +926,7 @@ svg rect {
   left: 0;
   right: 0;
   min-height: 100vh;
-  font-size: .8rem;
+  font-size: 1rem;
   line-height: 1.4; }
   .view.current {
     opacity: 1;
@@ -953,8 +952,8 @@ svg rect {
         .view__home .icon-clouds.active {
           opacity: 1; }
       .view__home .icon-logo {
-        width: 142px;
-        top: 50%;
+        width: 120px;
+        top: 49%;
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
         left: 0;
@@ -1167,6 +1166,7 @@ svg rect {
       top: 60px;
       z-index: 0;
       opacity: 0;
+      stroke: #383F26;
       -webkit-transition: .7s ease-in-out .5s all;
       transition: .7s ease-in-out .5s all; }
       .view__portfolio .crane-down.active {
@@ -1196,11 +1196,12 @@ svg rect {
         opacity: 1; }
     .view__portfolio .lantern {
       position: absolute;
-      right: 0px;
+      right: -5px;
       width: 80px;
       height: 270px;
       top: 580px;
       opacity: 0;
+      fill: #383F26;
       -webkit-transition: .5s ease-in opacity;
       transition: .5s ease-in opacity; }
       .view__portfolio .lantern.active {
@@ -1211,6 +1212,7 @@ svg rect {
       left: 20px;
       width: 180px;
       opacity: 0;
+      fill: #383F26;
       -webkit-transition: .5s ease-in opacity;
       transition: .5s ease-in opacity; }
       .view__portfolio .flower-pot.active {
@@ -1351,7 +1353,7 @@ svg rect {
     overflow: hidden;
     padding-bottom: 100%; }
   .grid h2 {
-    font-size: .8rem;
+    font-size: 1rem;
     text-align: left;
     font-weight: 300; }
 
@@ -1452,7 +1454,7 @@ svg rect {
       margin-bottom: 480px; }
     .view__about .text-block {
       margin-left: 80px;
-      font-size: .8rem; }
+      font-size: .9rem; }
     .view__about .orb--big {
       right: -100px;
       left: auto;
@@ -1478,6 +1480,7 @@ svg rect {
     width: 160px;
     left: 82%;
     top: 60px;
+    stroke: #383F26;
     -webkit-transition: .7s ease-in-out .7s all;
     transition: .7s ease-in-out .7s all; }
     .view__portfolio .crane-down.active {
@@ -1497,7 +1500,7 @@ svg rect {
     top: 100px; }
   .view__portfolio .lantern {
     stroke-width: 1px;
-    right: 0px;
+    right: -5px;
     width: 160px;
     height: 540px;
     top: 840px; }
@@ -1697,7 +1700,7 @@ svg rect {
     max-width: none;
     padding: 20px 30px; }
     .view__about .text-block {
-      font-size: .8rem;
+      font-size: 1rem;
       margin: 130px auto 0 100px;
       padding: 0;
       max-width: 750px;
@@ -1716,4 +1719,4 @@ svg rect {
     max-width: none;
     padding: 24px 90px; }
     .view__about .text-block {
-      max-width: 900px; } }
+      max-width: 860px; } }

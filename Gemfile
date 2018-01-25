@@ -7,5 +7,5 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw]
 gem 'middleman-livereload', '~> 3.4.6'
 gem 'middleman-aria_current'
-gem 'middleman-gh-pages'
-gem "middleman-deploy", "~> 2.0.0.pre.alpha"
+
+gem 'middleman-deploy', git: 'https://github.com/middleman-contrib/middleman-deploy', branch: 'master'
