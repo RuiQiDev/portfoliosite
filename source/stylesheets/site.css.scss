@@ -215,7 +215,7 @@ a {
   right: 0;
   width: 100%;
   text-align: center;
-  top: 60%;
+  top: 70%;
   content: attr(data-progress-text);
   font-family: $font__heading;
   font-weight: 400;
@@ -226,12 +226,7 @@ a {
 }
 
 
-// Navitation
-// This isn't working at the moment
-// [aria-current]:not([aria-current="false"]) {
-//   font-weight: bold;
-//   color: blue;
-// }
+
 
 .next {
   opacity: 0;
@@ -402,8 +397,9 @@ a {
 .btn {
   font-size: .9rem;
   border: 1px solid $greendark;
-  padding: 4px 16px;
+  padding: 4px 14px;
   margin: 8px 0;
+  margin-left: 10px;
   line-height: 1.5;
   display: inline-block;
   text-decoration: none;
@@ -707,7 +703,7 @@ right: 56%;
     }
   }
   &__portfolio {
-    padding: 144px 12px 120px;
+    padding: 164px 12px 120px;
     min-height: 100vh;
     position: relative;
     // overflow-x: hidden;
@@ -842,7 +838,7 @@ right: 56%;
     }
 
     .grid__terms {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     &.active {
@@ -1011,14 +1007,15 @@ right: 56%;
 }
 
 .term {
-  border: 1px solid $black;
-  background: rgba( $beige, .7 );
+  //border: 1px solid $green;
+  background: rgba( $green, .2 );
   padding: 3px 12px;
   display: inline-block;
   vertical-align: top;
   font-size: .8rem;
-  color: $black;
+  color: $greendark;
   margin-right: 4px;
+  margin-bottom: 5px;
   text-align: center;
   font-weight: 300;
 }
@@ -1093,6 +1090,9 @@ right: 56%;
 @media (max-width: $bp2) {
   .view{
     &__about{
+      .btn {
+        margin-left: 10px;
+      }
       .icon{
         &-flower-2{
           display: none;
@@ -1160,6 +1160,9 @@ right: 56%;
     }
     &__about {
       padding: 176px 40px 18px;
+      .btn {
+        margin-left: 10px;
+      }
       .relative {
         margin-bottom: 480px;
       }
@@ -1387,11 +1390,7 @@ right: 56%;
         width: 91px;
         height: 385.19px;
       }
-      // .icon-clouds-contact {
-      //   top: -2px;
-      //   right: 148px;
-      //   width: 355px;
-      // }
+
       .icon-sofa {
         width: 264.883px;
         height: 200px;
@@ -1478,24 +1477,10 @@ right: 56%;
      }
 
      &__about {
-       // padding: 182px 30px 18px;
+
        max-width: 1100px;
        margin: 0;
-       // .text-block {
-       //   padding-left: 42px;
-       //   font-size: .8rem;
-       //   margin-top: 56px;
-       // }
-       // .text-block {
-       //   font-size: .8rem;
-       //   // margin: 130px auto 0 100px;
-       //   padding: 0;
-       //   max-width: 850px;
-       //   line-height: 30px;
-       //   p {
-       //     line-height: 1.6;
-       //   }
-       // }
+
        .orb {
          &--small {
            width: 193px;
@@ -1516,11 +1501,9 @@ right: 56%;
           position: fixed;
           width: 320px;
           height: 559px;
-          // bottom: auto;
-          // top: 322px;
+
           right: 10px;
-          //top: 133px;
-          // right: 10px;
+
 
           &.active {
             right: 30px;
@@ -1602,8 +1585,7 @@ right: 56%;
       .icon-flower-2 {
         width: 343px;
         height: 600px;
-        //top: 133px;
-        // right: 10px;
+
       }
     }
 }
@@ -1615,128 +1597,41 @@ right: 56%;
     height: 55px;
   }
   .view {
-    // &__home {
-    //   .slide-in {
-    //     font-size: 20px;
-    //   }
-    //   .icon-clouds {
-    //     width: 350px;
-    //     height: 278px;
-    //     transform: translateY(-96%);
-    //      right: 55%;
-    //     &.active {
-    //        right: 56%;
-    //       transform: translateY(-96%);
-    //     }
-    //   }
-    //   .orb {
-    //     &--big {
-    //       margin-top: -250px;
-    //       width: 500px;
-    //       height: 500px;
-    //     }
-    //     &-context {
-    //       width: 500px;
-    //       height: 500px;
-    //       margin-left: -250px;
-    //     }
-    //   }
-    //   .icon-flower {
-    //     left: 51%;
-    //     width: 430px;
-    //     height: 858px;
-    //     opacity: 0;
-    //     transition: .5s ease all;
-    //     &.active {
-    //        left: 50%;
-    //        opacity: 1;
-    //     }
-    //   }
-    // }
+
      &__about {
       max-width: none;
      padding: 24px 90px;
-    //   .btn {
-    //     font-size: .8rem;
-    //   }
+
       .text-block {
-    //     font-size: .8rem;
-    //     margin: 130px auto 0 100px;
-    //     padding: 0;
+
      max-width: 860px;
-    //     line-height: 30px;
-    //     p {
-    //       line-height: 1.6;
-    //     }
-    //   }
-    //   .orb {
-    //     &--small {
-    //       width: 275px;
-    //       height: 275px;
-    //     }
-    //     &--big {
-    //       width: 630px;
-    //       height: 630px;
-    //       right: -60px;
-    //       margin-top: -315px;
-    //     }
-    //   }
-    //   .icon-clouds-2 {
-    //     width: 320px;
-    //     height: 233.143px;
-    //   }
-    //   .icon-flower-2 {
-    //     width: 320px;
-    //     height: 559px;
-    //     //top: 133px;
-    //     // right: 10px;
+
     }
     }
     &__portfolio {
       .icon-logo__dark {
       }
     }
-    // &__contact {
-    //   .icon-logo__dark {}
-      // .icon-parrot {
-      //   right: 161px;
-      //   width: 158px;
-      //   height: 677px;
-      // }
-    //   .icon-clouds-contact {
-    //     right: 180px;
-    //   }
-    //   .icon-sofa {
-    //     width: 420px;
-    //     height: 306px;
-    //   }
-    //   .icon-twitter {
-    //   }
-    //   .icon-dribbble {
-    //   }
-    //   .relative {
-    //   }
-    //   .text-block {
-    //   }
-    //   .email {
-    //   }
-    //   .social {
-    //   }
-    //   .orb {
-    //     &--big {
-    //       width: 600px;
-    //       height: 600px;
-    //       top: -38px;
-    //       left: auto;
-    //       right: -250px;
-    //     }
-    //     &--small {
-    //       width: 225px;
-    //       height: 225px;
-    //       bottom: 136px;
-    //       left: 154px;
-    //     }
-    //   }
-    // }
+    
+  }
+}
+
+.home-btn {
+  position: absolute;
+  bottom: 80px;
+  right: 40%;
+  opacity: 0;
+    transition: 1s ease-in 1s all;
+  &.active {
+    opacity: 1;
+  }
+}
+
+@media ( max-width: $bp2 ) {
+  .home-btn {
+    position: absolute;
+    bottom: 30px;
+    right: 25%;
+    width: 200px;
   }
 }
